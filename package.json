@@ -1,0 +1,11 @@
+{
+  "name": "bot-o-mat-tellmewhy-sir",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/RedVentures22/bot-o-mat-tellmewhy-sir.git",
+  "author": "David Elutilo <delutilo.dev@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}

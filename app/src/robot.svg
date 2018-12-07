@@ -1,0 +1,9 @@
+<svg class="robot-svg" height="106" width="106" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g class="robot">
+        <rect class="robot-head" id="Rectangle" x="0.5" y="46.5" width="105" height="58" rx="8"></rect>
+        <circle class="robot-eyes" id="Oval" cx="30.5" cy="73.5" r="15.5"></circle>
+        <circle class="robot-eyes" id="Oval-Copy" cx="76.5" cy="73.5" r="15.5"></circle>
+        <path class="robot-antenna-shaft" d="M51.012829,13.5 L49.5230812,46.5 L56.0664924,46.5 L54.2813667,13.5 L51.012829,13.5 Z" id="Rectangle"></path>
+        <circle class="robot-antenna-tip" id="Oval" cx="53" cy="7" r="7"></circle>
+    </g>
+</svg>

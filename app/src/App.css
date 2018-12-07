@@ -1,0 +1,172 @@
+@font-face {
+  font-family: Silkscreen;
+  src: url(./assets/fonts/Silkscreen.ttf) format('ttf'),
+       url(./assets/fonts/Silkscreen.woff) format('woff')
+       url(./assets/fonts/Silkscreen.woff2) format('woff2')
+}
+
+html, body {
+  height: 100vh;
+  width: 100vw;
+}
+
+body {
+  background-color: #FF6F6F;
+}
+
+.control .tag {
+  position: absolute;
+  bottom: -30px;
+}
+
+.topbar {
+  padding: 2rem;
+}
+
+.create-bot-form .control {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.create-bot-form .label,
+.create-bot-form .button {
+  font-family: 'Silkscreen', sans-serif;
+}
+
+.create-bot-form .input,
+.create-bot-form .select select {
+  background-color: #B93434;
+  border-color: #B93434;
+  color: white;
+}
+
+.contain-bots {
+  background-color: #FF6F6F;
+  display: flex;
+}
+
+.contain-bots > .columns {
+  width: 100%
+}
+
+.contain-bot {
+  height: 100%;
+}
+
+.leaderboard {
+  font-family: 'Source Code Pro', sans-serif;
+  background-color: black;
+  color: limegreen;
+  position: relative;
+  height: inherit;
+  padding: 1rem;
+}
+
+.leaderboard > button {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.robot {
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+  font-family: 'Silkscreen', sans-serif;
+}
+
+.robot__actions,
+.robot__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  position: relative;
+}
+
+.robot__actions .button+.button {
+  margin-top: 0.5rem;
+}
+
+.robot-svg {
+  /* transform: scale(0.75); */
+}
+
+.robot-head {
+  fill: lightblue;
+}
+
+.robot-eyes {
+  fill: lightcoral;
+}
+
+.robot-antenna-shaft {
+  fill: grey;
+}
+
+.robot-antenna-tip {
+  fill: orange;
+}
+
+.task-bubble {
+  position: absolute;
+  top: 25%;
+  opacity: 0;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  background-color: black;
+  color: limegreen;
+  min-width: 200px;
+  z-index: 1000;
+}
+
+.task-bubble.invalid {
+  color: red;
+}
+
+.bubble-exit {
+  animation-name: validBubble;
+  animation-duration: 2000ms;
+}
+
+.invalid-bubble-exit {
+  animation-name: invalidBubble;
+  animation-duration: 2000ms;
+}
+
+.topbar {
+  background-color: rgba(185, 52, 52, 0.75);
+}
+
+.robot__taskCount {
+  color: #2F80ED;
+}
+
+@keyframes validBubble {
+  0% {
+    transform: scale(0) translate(25%, -50%);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1) translate(25%, -100%);
+    opacity: 0;
+  }
+}
+
+@keyframes invalidBubble {
+  0% {
+    transform: scale(0) translate(25%, -50%);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1) translate(25%, 50%);
+    opacity: 0;
+  }
+}
